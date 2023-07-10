@@ -38,7 +38,7 @@ export const Dragdrop=()=>{
                     fontFamily:"cursive",position:"fixed",right:"10px",bottom:"60px", }}>
                     Next
                 </Button>
-                <Button variant="contained" component={ Link } to="/selectToppings"
+                <Button variant="contained" component={ Link } to="/selectFlower"
                     style={{ backgroundColor: "saddlebrown",
                     fontFamily:"cursive",position:"fixed",left:"10px",bottom:"60px", }}>
                     Previous

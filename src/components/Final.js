@@ -20,7 +20,9 @@ export const Final=()=>{
 }
 
 const Bouquet=()=>{
+    console.log('Final clic');
     return(
+        
         <div className="image" >
             <img style={{width:"800px"}} src="assets/main3.png" alt="Bouquet" className="flowers"/>
             {

@@ -20,7 +20,7 @@ export const Dropdrag=()=>{
     }))
 
     const addImageToBoard=(key)=>{
-        console.log(key)
+        console.log('addingimage')
         const DroppedList=[]
         PictureList.map((picture)=>{
             if(key===picture["id"]){
@@ -61,8 +61,30 @@ export const Dropdrag=()=>{
                         ) 
                     })}
                 </div>
+                <Bouquet1 />
             </div>
         </div>
         </>
     )
 }
+
+const Bouquet1=()=>{
+    console.log('Final clic');
+    return(
+        
+        <div className="image" >
+            <img style={{width:"700px"}} src="assets/main3.png" alt="Bouquet" className="flowers"/>
+            {
+                finalList.map((picture)=>{
+                    if(picture["selected"]===true){
+                        return(
+                            <img style={{width:"700px",paddingLeft: "140px"}} src={picture.image} alt="flower" className="flowers"/>
+                        )
+                    }
+                    return null
+                })
+            }
+        </div>
+    )
+}
+
