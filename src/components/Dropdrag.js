@@ -11,11 +11,11 @@ export const Dropdrag=()=>{
 
     const [board,setBoard]=useState([]);
 
-    const [{isOver},drop]= useDrop(()=>({
+    const [,drop]= useDrop(()=>({
         accept:"image",
         drop: (item)=>addImageToBoard(item.id),
         collect:(monitor)=>({
-            isOver:!!monitor.isOver(),
+           isOver:!!monitor.isOver(),
         }),
     }))
 
