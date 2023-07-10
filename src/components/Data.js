@@ -16,6 +16,19 @@ export const Data=[
         name:"Lily",
         image:"assets/lily4.png",
         selected:false
+    },
+    {
+        id:4,
+        name:"Jasmine",
+        image:"assets/jasmine3.png",
+        selected:false
+    },
+    {
+        id:5,
+        name:"Mariegold",
+        image:"assets/mariegold2.png",
+        selected:false
     }
+ 
  
 ]
