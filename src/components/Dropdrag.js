@@ -61,9 +61,10 @@ export const Dropdrag=()=>{
                         ) 
                     })}
                 </div>
-                <Bouquet1 />
+               
             </div>
         </div>
+        <Bouquet1/>
         </>
     )
 }
@@ -73,7 +74,7 @@ const Bouquet1=()=>{
     return(
         
         <div className="image" >
-            <img style={{width:"700px"}} src="assets/main3.png" alt="Bouquet" className="flowers"/>
+            <img style={{width:"1000px"}} src="assets/main3.png" alt="Bouquet" className="flowers"/>
             {
                 finalList.map((picture)=>{
                     if(picture["selected"]===true){
